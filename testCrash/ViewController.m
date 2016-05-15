@@ -16,12 +16,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *array = @[];
+    
+    NSLog(@"%@", array[2]);
+    
+    NSMutableArray *arrayM = [@[] mutableCopy];
+    
+    id obj;
+    
+    [arrayM addObject:obj];
+    [arrayM addObject:@""];
+    
+    [arrayM insertObject:@"" atIndex:3];
+    
+    NSMutableDictionary *dictionaryM = [@{} mutableCopy];
+    
+    [dictionaryM setObject:obj forKey:@""];
+    
+    [self crashMe];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    return [super methodSignatureForSelector:aSelector];
 }
 
 @end

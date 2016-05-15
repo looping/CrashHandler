@@ -1,17 +1,13 @@
 //
-//  ViewController.h
+//  NSObject+SafeAccess.h
 //  testCrash
 //
 //  Created by Looping on 5/15/16.
 //  Copyright © 2016 RidgeCorn. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
-
-- (void)crashMe;
+@interface NSObject (SafeAccess)
 
 @end
-

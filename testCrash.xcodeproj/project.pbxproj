@@ -14,6 +14,8 @@
 		6E2D76CB1CE8755400720317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2D76CA1CE8755400720317 /* Assets.xcassets */; };
 		6E2D76CE1CE8755400720317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2D76CC1CE8755400720317 /* LaunchScreen.storyboard */; };
 		6E2D76D91CE8755400720317 /* testCrashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D76D81CE8755400720317 /* testCrashTests.m */; };
+		6E2D76E51CE8764100720317 /* NSObject+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D76E41CE8764100720317 /* NSObject+SafeAccess.m */; };
+		6E2D76E81CE8CC9900720317 /* CrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D76E71CE8CC9900720317 /* CrashHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		6E2D76D41CE8755400720317 /* testCrashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCrashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2D76D81CE8755400720317 /* testCrashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testCrashTests.m; sourceTree = "<group>"; };
 		6E2D76DA1CE8755400720317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E2D76E31CE8764100720317 /* NSObject+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SafeAccess.h"; sourceTree = "<group>"; };
+		6E2D76E41CE8764100720317 /* NSObject+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SafeAccess.m"; sourceTree = "<group>"; };
+		6E2D76E61CE8CC9900720317 /* CrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashHandler.h; sourceTree = "<group>"; };
+		6E2D76E71CE8CC9900720317 /* CrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				6E2D76C21CE8755400720317 /* AppDelegate.m */,
 				6E2D76C41CE8755400720317 /* ViewController.h */,
 				6E2D76C51CE8755400720317 /* ViewController.m */,
+				6E2D76E61CE8CC9900720317 /* CrashHandler.h */,
+				6E2D76E71CE8CC9900720317 /* CrashHandler.m */,
+				6E2D76E31CE8764100720317 /* NSObject+SafeAccess.h */,
+				6E2D76E41CE8764100720317 /* NSObject+SafeAccess.m */,
 				6E2D76C71CE8755400720317 /* Main.storyboard */,
 				6E2D76CA1CE8755400720317 /* Assets.xcassets */,
 				6E2D76CC1CE8755400720317 /* LaunchScreen.storyboard */,
@@ -211,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2D76E81CE8CC9900720317 /* CrashHandler.m in Sources */,
 				6E2D76C61CE8755400720317 /* ViewController.m in Sources */,
 				6E2D76C31CE8755400720317 /* AppDelegate.m in Sources */,
 				6E2D76C01CE8755400720317 /* main.m in Sources */,
+				6E2D76E51CE8764100720317 /* NSObject+SafeAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
